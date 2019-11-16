@@ -32,3 +32,11 @@ Examples:
 Make sure you use .savefig to save your figure as Conditions.png
 at the end of your script (but BEFORE the plt.show()!!).
 '''
+
+filename = "Conditions.csv"
+
+def read_data():
+    f = open(filename, 'r')
+    raw_list = []
+    for line in f:
+        raw_list.append(line)
